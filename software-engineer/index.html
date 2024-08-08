@@ -3,53 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test</title>
+    <title>RevoU Software Engineer Practice</title>
     <style>
       button {
         width: 100%;
       }
     </style>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Hello Guys Welcome Back To My Channel!</h1>
+    <header>
+      <h1>Hello Guys Welcome Back To My Channel!</h1>
+    </header>
 
-    <div>
-      <p>Layout Kalkulator</p>
+    <article>
+      <p>This is my first article</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-      <table>
-        <tr>
-          <th colspan="4"><input type="text" /></th>
-        </tr>
-        <tr>
-          <td colspan="2"><button>AC</button></td>
-          <td><button>C</button></td>
-          <td><button>*</button></td>
-        </tr>
-        <tr>
-          <td><button>7</button></td>
-          <td><button>8</button></td>
-          <td><button>9</button></td>
-          <td><button>/</button></td>
-        </tr>
-        <tr>
-          <td><button>4</button></td>
-          <td><button>5</button></td>
-          <td><button>6</button></td>
-          <td><button>+</button></td>
-        </tr>
-        <tr>
-          <td><button>1</button></td>
-          <td><button>2</button></td>
-          <td><button>3</button></td>
-          <td><button>-</button></td>
-        </tr>
-        <tr>
-          <td><button>+-</button></td>
-          <td><button>0</button></td>
-          <td><button>.</button></td>
-          <td><button>=</button></td>
-        </tr>
-      </table>
-    </div>
+      <div>
+        <h1>Calculator Layout using Table</h1>
+        <table>
+          <tr>
+            <th colspan="4"><input type="text" /></th>
+          </tr>
+          <tr>
+            <td colspan="2"><button>AC</button></td>
+            <td><button>C</button></td>
+            <td><button>*</button></td>
+          </tr>
+          <tr>
+            <td><button>7</button></td>
+            <td><button>8</button></td>
+            <td><button>9</button></td>
+            <td><button>/</button></td>
+          </tr>
+          <tr>
+            <td><button>4</button></td>
+            <td><button>5</button></td>
+            <td><button>6</button></td>
+            <td><button>+</button></td>
+          </tr>
+          <tr>
+            <td><button>1</button></td>
+            <td><button>2</button></td>
+            <td><button>3</button></td>
+            <td><button>-</button></td>
+          </tr>
+          <tr>
+            <td><button>+-</button></td>
+            <td><button>0</button></td>
+            <td><button>.</button></td>
+            <td><button>=</button></td>
+          </tr>
+        </table>
+      </div>
+
+      <div>
+        <h1>Calculator Layout using Display Grid</h1>
+        <div id="calculator-grid">
+          <input type="text" class="span-four" />
+          <button class="span-two red" onclick="turnOnDisplay()">AC</button>
+          <button>C</button>
+          <button>*</button>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button>/</button>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>+</button>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>-</button>
+          <button>+-</button>
+          <button>0</button>
+          <button>.</button>
+          <button>=</button>
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <p>&copy; 2024 Istamosh</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

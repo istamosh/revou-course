@@ -1,0 +1,18 @@
+#calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  max-width: 200px;
+  margin: auto;
+  gap: 4px;
+}
+
+.span-four {
+  grid-column: span 4;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+.red {
+  background-color: rgb(220, 43, 137);}
